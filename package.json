@@ -1,10 +1,10 @@
 {
-	"name": "helloworld-sample",
-	"displayName": "helloworld-sample",
-	"description": "HelloWorld example for VS Code",
+	"name": "go-to-include",
+	"displayName": "go-to-include",
+	"description": "Easily navigate through your includes",
 	"version": "0.0.1",
-	"publisher": "vscode-samples",
-	"repository": "https://github.com/Microsoft/vscode-extension-samples/helloworld-sample",
+	"publisher": "rachidba",
+	"repository": "https://github.com/Rachidba/vscode-go-to-include",
 	"engines": {
 		"vscode": "^1.34.0"
 	},
@@ -12,14 +12,14 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:extension.goToInclude"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
+				"command": "extension.goToInclude",
+				"title": "Go to included file or directory"
 			}
 		]
 	},
