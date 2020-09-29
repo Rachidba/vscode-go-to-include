@@ -21,6 +21,13 @@
 				"command": "extension.goToInclude",
 				"title": "Go to included file or directory"
 			}
+		],
+		"keybindings": [
+			{
+			  "command": "extension.goToInclude",
+			  "key": "ctrl+f1",
+			  "mac": "cmd+f1"
+			}
 		]
 	},
 	"scripts": {
