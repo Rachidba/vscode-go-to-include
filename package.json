@@ -12,21 +12,32 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.goToInclude"
+		"onCommand:extension.goToInclude",
+		"onCommand:extension.findReferences"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
+		
 		"commands": [
 			{
 				"command": "extension.goToInclude",
 				"title": "Go to included file or directory"
+			},
+			{
+				"command": "extension.findReferences",
+				"title": "Find current file references"
 			}
 		],
 		"keybindings": [
 			{
-			  "command": "extension.goToInclude",
-			  "key": "ctrl+f1",
-			  "mac": "cmd+f1"
+				"command": "extension.goToInclude",
+				"key": "ctrl+i",
+				"mac": "cmd+i"
+			},
+			{
+				"command": "extension.findReferences",
+				"key": "ctrl+r",
+				"mac": "cmd+r"
 			}
 		]
 	},
