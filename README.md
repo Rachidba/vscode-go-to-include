@@ -1,6 +1,6 @@
 # Includes-navigation
 
-A bscode extension to help you navigate eisley through your Hocon includes.
+A vscode extension to help you navigate eisley through your Hocon includes.
 I created this extension for a personal use case, you can easily adapt the codebase to your need/files format.
 
 To downoad the extension: <https://marketplace.visualstudio.com/items?itemName=rachidba.includes-navigation>.
