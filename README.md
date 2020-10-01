@@ -1,27 +1,20 @@
-# Hello World Sample
+# Includes-navigation
 
-This is a Hello World example that shows you how to use VS Code API.
+A bscode extension to help you navigate eisley through your Hocon includes.
+I created this extension for a personal use case, you can easily adapt the codebase to your need/files format.
 
-Guide for this sample: https://code.visualstudio.com/api/get-started/your-first-extension.
+To downoad the extension: <https://marketplace.visualstudio.com/items?itemName=rachidba.includes-navigation>.
 
-## Demo
+## Features & Usage
 
-![demo](demo.gif)
+- [x] Navigate to the included item by selecting the include line and typing **Crtl+i (Cmd+i on mac)**
+- [x] Find all items that include the current file by typing **Crtl+r (Cmd+r on mac)**
+- [ ] View the include tree of the current item
 
-## VS Code API
+## Running the extension locally
 
-### `vscode` module
-
-- [`commands.registerCommand`](https://code.visualstudio.com/api/references/vscode-api#commands.registerCommand)
-- [`window.showInformationMessage`](https://code.visualstudio.com/api/references/vscode-api#window.showInformationMessage)
-
-### Contribution Points
-
-- [`contributes.commands`](https://code.visualstudio.com/api/references/contribution-points#contributes.commands)
-
-## Running the Sample
-
+- Clone the repository
 - Run `npm install` in terminal to install dependencies
 - Run the `Run Extension` target in the Debug View. This will:
-	- Start a task `npm: watch` to compile the code
-	- Run the extension in a new VS Code window
+  - Start a task `npm: watch` to compile the code
+  - Run the extension in a new VS Code window
