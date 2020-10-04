@@ -21,16 +21,18 @@ export async function execute() : Promise<void> {
     const getReferences = async (includeStatement: string) : Promise<vscode.Uri[]> => {
         const filesUris = await vscode.workspace.findFiles('**');
         const filterResutl: vscode.Uri[] = new Array();
-        for (let uri of filesUris) 
-            if (await isDocumentIncludes(uri, includeStatement))
-                filterResutl.push(uri);
+        for (let uri of filesUris) {
+            try {
+                if (await isDocumentIncludes(uri, includeStatement))
+                    filterResutl.push(uri);
+            } catch(e) {}
+        }
         return filterResutl;
     }
     const slectedItemName = getSelectedItemName();
     const includeStatement =  buildIncludeStatement(slectedItemName);
     const res = await getReferences(includeStatement);
     try {
-        console.log(res);
         const selectedFileByUser = await shared.allowUserToChooseFileFromList(res);
         shared.openUri(selectedFileByUser);
     } catch(e) {
