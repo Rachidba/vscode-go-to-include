@@ -2,7 +2,7 @@
 	"name": "includes-navigation",
 	"displayName": "includes-navigation",
 	"description": "Easily navigate through your includes",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"publisher": "rachidba",
 	"repository": "https://github.com/Rachidba/vscode-go-to-include",
 	"engines": {
